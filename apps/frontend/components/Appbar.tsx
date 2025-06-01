@@ -13,13 +13,15 @@ import {
 export function Appbar(){
     return (
             <div className='flex justify-between items-center p-5'>
-                <div className="border border-white-200 bg-white rounded-lg  p-2 text-black font-medium">
+                <Button variant="outline" className="text-black dark:text-white dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300">
                     DePin Uptime
-                </div>
+                </Button>
                 <div>
                     <SignedOut>
                         <SignInButton>
-                            <Button variant="outline" className="bg-black text-white font-">Log in</Button>
+                            <Button variant="outline" className="mr-2 text-black dark:text-white dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors duration-300">
+                                Log in
+                            </Button>
                         </SignInButton>
                         <SignUpButton >
                             {/* <Button variant="outline">Sign Up</Button> */}
